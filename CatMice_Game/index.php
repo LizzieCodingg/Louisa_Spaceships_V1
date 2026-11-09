@@ -25,15 +25,12 @@
     <!-- Hier laden we de classes -->
     <script src="js/Entity.js"></script>
     <script src="js/Cat.js"></script>
+    <script src="js/Game.js"></script>
 
-    <!-- TIJDELIJKE TEST: verwijderen we in stap 1d -->
     <script>
-        const canvas = document.getElementById("gameCanvas");
-        const ctx = canvas.getContext("2d");
-
-        const kat = new Cat(400, 300);
-        kat.draw(ctx);
-        console.log("Levens:", kat.lives);
+        // Maakt het spel aan en start het
+        const game = new Game(document.getElementById("gameCanvas"));
+        game.start();
     </script>
 </body>
 </html>
