@@ -1,2 +1,2 @@
 # Spaceships
-(slechte) voorbeeldcode ten behoeve van de Webtechnologie/php les
+(gefixed) voorbeeldcode ten behoeve van de Webtechnologie/php les
