@@ -23,16 +23,15 @@
     <canvas id="gameCanvas" width="800" height="600"></canvas>
 
     <!-- Hier laden we de classes -->
-    <script src="js/Entity.js"></script>
-    <script src="js/Cat.js"></script>
-    <script src="js/YarnBall.js"></script>
-    <script src="js/Mouse.js"></script>
-    <script src="js/Game.js"></script>
+   <script src="js/Entity.js"></script>
+   <script src="js/Cat.js"></script>
+   <script src="js/YarnBall.js"></script>
+   <script src="js/Mouse.js"></script>
+   <script src="js/Game.js"></script>
 
-    <script>
-        // Maakt het spel aan en start het
-        const game = new Game(document.getElementById("gameCanvas"));
-        game.start();
-    </script>
+   <script>
+       const game = new Game(document.getElementById("gameCanvas"));
+       game.start();
+   </script>
 </body>
 </html>

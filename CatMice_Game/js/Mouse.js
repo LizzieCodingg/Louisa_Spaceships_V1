@@ -3,7 +3,7 @@ class Mouse extends Entity {
 
     // speed krijgen we van buiten mee, zodat elk level andere muizen kan maken
     constructor(x, y, speed) {
-        super(x, y, 36, speed, "🐭");
+        super(x, y, 30, speed, "🐭");
         this.hp = 1; // aantal treffers dat de muis aankan
     }
 
