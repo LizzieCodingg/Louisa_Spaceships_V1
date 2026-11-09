@@ -6,7 +6,7 @@ class Cat extends Entity {
 
         this.lives = 5;     // aantal levens
         this.cooldown = 0;  // frames die we nog moeten wachten voor het volgende schot
-        this.fireRate = 15; // wachttijd tussen schoten (15 frames = ongeveer 4 per seconde)
+        this.fireRate = 20; // wachttijd tussen schoten (15 frames = ongeveer 4 per seconde)
     }
 
     update(keys) {
