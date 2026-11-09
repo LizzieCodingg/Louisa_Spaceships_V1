@@ -26,6 +26,7 @@
     <script src="js/Entity.js"></script>
     <script src="js/Cat.js"></script>
     <script src="js/YarnBall.js"></script>
+    <script src="js/Mouse.js"></script>
     <script src="js/Game.js"></script>
 
     <script>
