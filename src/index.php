@@ -3,7 +3,7 @@
 // de include_once te gebruiken. Dit zorgt voor een extra stukje bescherming tegen fouten, namelijk dat het bestand
 // maar 1x wordt toegevoegd. Dus als de code al een keer is toegevoegd, dan wordt dat niet nog een keer gedaan. Een
 // zogenaamde include loop wordt hiermee voorkomen.
-include_once 'xxxx'
+include_once 'Spaceship.php';
 ?>
 
 <!doctype html>
@@ -24,13 +24,13 @@ include_once 'xxxx'
         // blauwdruk Spaceship. Door geen parameters (data) mee te geven, wordt er een standaard kopie gemaakt. Een
         // analogie die gemaakt kan worden is met een printer, je maakt een blauwdruk van een document, dat print je
         // 10x. Als je op de eerste kopie een kras zet met een pen, verschijnt die kras dan ook op de overige 9 kopieën?
-        $ship1 = new ; // spaceship? 
+        $ship1 = new Spaceship();
 
 
         // Haal simpel een eigenschap op (public) en toon dit.
-        echo $ship1-> "<br>";   // ammmo
+        echo $ship1->ammo . "<br>";
         // Maak een tweede instantie nu custom.
-        $ship2 = new xxxxx(50, 50, 50);
+        $ship2 = new Spaceship(50, 50, 50);
         // Laten zien dat er nu ook een andere waarde komt.
         echo $ship2->ammo . "<br>";
 
