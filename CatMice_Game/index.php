@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,14 +24,16 @@
 
     <!-- Hier laden we de classes -->
     <script src="js/Entity.js"></script>
+    <script src="js/Cat.js"></script>
 
     <!-- TIJDELIJKE TEST: verwijderen we in stap 1d -->
     <script>
         const canvas = document.getElementById("gameCanvas");
         const ctx = canvas.getContext("2d");
 
-        const testKat = new Entity(400, 300, 60, 5, "🐱");
-        testKat.draw(ctx);
+        const kat = new Cat(400, 300);
+        kat.draw(ctx);
+        console.log("Levens:", kat.lives);
     </script>
 </body>
 </html>
