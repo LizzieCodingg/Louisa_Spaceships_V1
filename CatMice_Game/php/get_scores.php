@@ -1,6 +1,7 @@
 <?php
-// Dit bestand geeft de top 10 terug aan JavaScript, als JSON.
-include_once 'Scoreboard.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use CatMice\Scoreboard;
 
 header("Content-Type: application/json");
 

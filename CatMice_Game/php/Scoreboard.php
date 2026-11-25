@@ -1,4 +1,7 @@
 <?php
+// De namespace past bij de autoload-configuratie in composer.json:
+// "CatMice\" hoort bij de map CatMice_Game/php/
+namespace CatMice;
 // Scoreboard is een class (blauwdruk) die de scores beheert.
 // Net als Spaceship bevat het eigenschappen (data) en methodes (acties).
 class Scoreboard

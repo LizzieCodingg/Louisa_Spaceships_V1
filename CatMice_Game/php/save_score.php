@@ -1,6 +1,10 @@
 <?php
-// Dit bestand ontvangt een score van JavaScript (fetch) en slaat hem op.
-include_once 'Scoreboard.php';
+// Composer laadt de classes automatisch (autoloading). Dit is de enige
+// require die nog nodig is: hij laadt de autoloader zelf.
+require_once __DIR__ . '/../vendor/autoload.php';
+
+// Met "use" zeggen we welke class uit welke namespace we gebruiken
+use CatMice\Scoreboard;
 
 header("Content-Type: application/json");
 

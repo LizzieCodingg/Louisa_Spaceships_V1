@@ -37,10 +37,6 @@
         <ol id="scoreList"></ol>
     </div>
 
-    <!-- Het scorebord: wordt door JavaScript gevuld met data uit PHP -->
-    <h2>Top Cats</h2>
-    <ol id="scoreList"></ol>
-
     <!-- Hier laden we de classes -->
    <script src="js/Entity.js"></script>
    <script src="js/Cat.js"></script>
