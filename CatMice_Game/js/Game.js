@@ -210,10 +210,9 @@ class Game {
         for (const ball of this.yarnBalls) {
             for (const mouse of this.mice) {
                 if (mouse.hp > 0 && ball.collidesWith(mouse)) {
-                    mouse.hp--;
                     ball.x = -9999; // buiten beeld, wordt zo weggegooid
-                    if (mouse.hp <= 0) this.score += 10;
-                    break; // een kluwen kan maar 1 muis raken
+                    // hit() geeft true terug als de muis hierdoor doodgaat
+                    if (mouse.hit()) this.score += 10;
                 }
             }
         }
@@ -224,11 +223,11 @@ class Game {
             if (mouse.hp > 0 && mouse.collidesWith(this.cat)) {
                 this.cat.takeHit();
                 mouse.hp = 0;
+                mouse.removable = true;
             }
         }
-
-        // Gooi dode muizen weg
-        this.mice = this.mice.filter(mouse => mouse.hp > 0);
+        // Een muis die dood gaat speelt eerst zijn animatie, pas daarna is hij removable
+        this.mice = this.mice.filter(mouse => !mouse.removable);
 
         // Geen levens meer = game over. Omdat update() daarna stopt,
         // gebeurt dit maar 1x per spel.
