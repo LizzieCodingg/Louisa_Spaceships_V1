@@ -1,6 +1,11 @@
 # Cat & Mice Game
+the spaceships is my school assignment. I changed it to Cat & Mice.
+
+# Cat & Mice Game
 This is my first web-game i've made. 
 it's inspired by Prairie king from Stardew Valley.
+
+
 
 
 
